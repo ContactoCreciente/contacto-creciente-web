@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto Creciente · Consultora de Crecimiento Integral en Lima</title>
+  <meta name="description" content="Construimos el sistema comercial que tu PYME necesita para generar demanda calificada y predecible. Si no sirve para vender, no lo producimos.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ICONOS (sprite): se usan con <svg class="i"><use href="#nombre"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="arrow-ur" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+      <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="x-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol>
+      <symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+      <symbol id="lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
+      <symbol id="megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+      <symbol id="timer" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="m12 14 3-3"/><circle cx="12" cy="14" r="8"/></symbol>
+      <symbol id="ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></symbol>
+      <symbol id="compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></symbol>
+      <symbol id="chart" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+      <symbol id="layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+      <symbol id="briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+      <symbol id="users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="trend" viewBox="0 0 24 24"><path d="M12 16v5"/><path d="M16 14v7"/><path d="M20 10v11"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18v3"/><path d="M8 14v7"/></symbol>
+      <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="quote" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></symbol>
+      <symbol id="chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+      <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+      <symbol id="instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></symbol>
+      <symbol id="package" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 8.7 5 8.7-5"/></symbol>
+      <symbol id="monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></symbol>
+      <symbol id="settings" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Lienzo 3D fijo detrás de toda la página (lo controla main.js con Three.js) -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- Navegación -->
+  <header class="nav">
+    <a class="brand" href="#inicio" aria-label="Contacto Creciente, inicio">
+      <span class="brand-mark"><svg class="i"><use href="#sprout"/></svg></span>
+      <span class="brand-text">Contacto<br><b>Creciente</b></span>
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#inicio" class="is-active">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Nosotros</a>
+      <a href="#diagnostico">Plan SEM/SEO</a>
+    </nav>
+    <div class="nav-actions">
+      <button type="button" class="nav-login" id="btnLogin" aria-haspopup="dialog"><svg class="i"><use href="#lock"/></svg>Ingresar</button>
+      <a href="#diagnostico" class="btn btn-dark" data-magnetic>Diagnóstico Comercial <svg class="i"><use href="#arrow-ur"/></svg></a>
+    </div>
+  </header>
+
+  <!-- ============ LOGIN (panel interno del equipo) ============ -->
+  <!-- Solo diseño: todavía no valida usuarios. Conectar aquí el sistema real (Supabase, Firebase, etc.). -->
+  <dialog class="login" id="loginDialog" aria-labelledby="loginTitle">
+    <form class="form login-form" id="loginForm" method="dialog" novalidate>
+      <button type="button" class="login-close" id="loginClose" aria-label="Cerrar"><svg class="i"><use href="#x"/></svg></button>
+      <span class="brand-mark"><svg class="i"><use href="#sprout"/></svg></span>
+      <small class="kicker">Panel interno del equipo</small>
+      <h3 id="loginTitle">Ingresa a tu cuenta</h3>
+      <p class="help">Acceso exclusivo para el equipo de Contacto Creciente.</p>
+      <label class="field">Correo<input name="correo" type="email" autocomplete="username" placeholder="nombre@contactocreciente.pe"></label>
+      <label class="field">Contraseña<input name="clave" type="password" autocomplete="current-password" placeholder="••••••••"></label>
+      <div class="login-row">
+        <label class="login-remember"><input type="checkbox" name="recordar"> Recordarme</label>
+        <a href="#" class="login-forgot" id="loginForgot">¿Olvidaste tu contraseña?</a>
+      </div>
+      <p class="err" id="loginErr" role="alert"></p>
+      <button type="submit" class="btn btn-dark btn-block">Ingresar <svg class="i"><use href="#arrow-right"/></svg></button>
+    </form>
+  </dialog>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="hero" data-pose="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i>Consultora de crecimiento · Lima</p>
+        <h1 class="split">Impulsamos tu marca. <span class="accent">Potenciamos tus ventas.</span></h1>
+        <p class="lead hero-lead">Unimos estrategia, captación y cierre en un solo sistema para que tu PYME venda más, mes a mes.</p>
+        <div class="hero-actions">
+          <a href="#diagnostico" class="btn btn-teal" data-magnetic>Solicitar diagnóstico comercial <svg class="i"><use href="#arrow-ur"/></svg></a>
+          <a href="#metodo" class="btn btn-ghost" data-magnetic>Conocer el método CRECE <svg class="i"><use href="#arrow-ur"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-hidden="false">
+        <article class="gcard" style="--x:2%;--y:4%" data-depth="22">
+          <span class="gl"><i></i>Estrategia</span>
+          <b class="gv" data-count="60" data-prefix="+" data-suffix="%">+60%</b>
+          <span class="gt">Ventas trimestrales auditadas</span>
+        </article>
+        <article class="gcard" style="--x:62%;--y:20%" data-depth="34">
+          <span class="gl"><i></i>Cierre</span>
+          <b class="gv">0% Vanidad</b>
+          <span class="gt">Foco 100% en caja y margen</span>
+        </article>
+        <article class="gcard" style="--x:6%;--y:76%" data-depth="16">
+          <span class="gl"><i></i>Captación</span>
+          <b class="gv">&lt; 15 min</b>
+          <span class="gt">Primer contacto comercial</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section id="servicios" class="block" data-pose="servicios">
+      <header class="sec-head">
+        <p class="eyebrow"><i></i>NUESTROS SERVICIOS</p>
+        <h2 class="split"><b>4 Unidades diseñadas para generar ingresos</b></h2>
+        <p class="sub">Conectamos la estrategia de ventas con la pauta digital y el equipo de cierre:</p>
+      </header>
+
+      <div class="services">
+        <!-- Estrategia: embudo comercial -->
+        <article class="svc" data-tilt="5">
+          <div class="svc-top"><span class="ico"><svg class="i"><use href="#compass"/></svg></span><span class="svc-num">01</span></div>
+          <div class="svc-visual v-funnel" aria-hidden="true">
+            <div class="vis-head"><span>Embudo comercial</span><em>Últimos 90 días</em></div>
+            <div class="funnel">
+              <div class="f-row"><span class="f-bar" style="--w:100%"></span><b>1 240</b><small>Leads</small></div>
+              <div class="f-row"><span class="f-bar" style="--w:64%"></span><b>412</b><small>Calificados</small></div>
+              <div class="f-row"><span class="f-bar" style="--w:36%"></span><b>128</b><small>Propuestas</small></div>
+              <div class="f-row"><span class="f-bar hot" style="--w:18%"></span><b>57</b><small>Clientes</small></div>
+            </div>
+            <span class="vchip"><svg class="i"><use href="#trend"/></svg>+32% conversión</span>
+          </div>
+          <h3>Estrategia Comercial</h3>
+          <p class="svc-promise">“Sabe dónde invertir cada sol y predice tu flujo de caja.”</p>
+          <div class="svc-actions"><a href="#metodo" class="link">Ver más <svg class="i"><use href="#arrow-ur"/></svg></a><a href="#diagnostico" class="btn btn-teal btn-sm">Cotizar</a></div>
+        </article>
+
+        <!-- Marketing: curva de MQLs -->
+        <article class="svc" data-tilt="5">
+          <div class="svc-top"><span class="ico"><svg class="i"><use href="#chart"/></svg></span><span class="svc-num">02</span></div>
+          <div class="svc-visual v-chart" aria-hidden="true">
+            <div class="vis-head"><span>MQLs por mes</span><em>Google · Meta · LinkedIn</em></div>
+            <svg class="chart" viewBox="0 0 320 120" preserveAspectRatio="none">
+              <defs><linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2ee6c5" stop-opacity=".35"/><stop offset="1" stop-color="#2ee6c5" stop-opacity="0"/></linearGradient></defs>
+              <path class="grid-l" d="M0 30H320M0 60H320M0 90H320"/>
+              <path class="area" d="M0 104 L40 98 L80 92 L120 80 L160 82 L200 62 L240 50 L280 34 L320 18 L320 120 L0 120Z"/>
+              <path class="line" d="M0 104 L40 98 L80 92 L120 80 L160 82 L200 62 L240 50 L280 34 L320 18"/>
+              <circle class="dot" cx="280" cy="34" r="4"/>
+            </svg>
+            <div class="months"><span>Ene</span><span>Feb</span><span>Mar</span><span>Abr</span><span>May</span><span>Jun</span></div>
+            <span class="vchip"><b>148</b>MQL / mes</span>
+          </div>
+          <h3>Marketing &amp; Performance</h3>
+          <p class="svc-promise">“Prospectos listos para comprar, no 'likes'.”</p>
+          <div class="svc-actions"><a href="#metodo" class="link">Ver más <svg class="i"><use href="#arrow-ur"/></svg></a><a href="#diagnostico" class="btn btn-teal btn-sm">Cotizar</a></div>
+        </article>
+
+        <!-- Branding: sistema de marca -->
+        <article class="svc" data-tilt="5">
+          <div class="svc-top"><span class="ico"><svg class="i"><use href="#layers"/></svg></span><span class="svc-num">03</span></div>
+          <div class="svc-visual v-brand" aria-hidden="true">
+            <div class="vis-head"><span>Brand Platform</span></div>
+            <div class="brand-board">
+              <div class="b-card">
+                <span class="b-logo"><svg class="i"><use href="#sprout"/></svg></span>
+                <span class="b-name"><s></s><s></s></span>
+                <span class="b-type">Aa</span>
+              </div>
+              <div class="b-swatches"><i style="--c:#0b2240"></i><i style="--c:#00a98f"></i><i style="--c:#2ee6c5"></i><i style="--c:#eef3f8"></i></div>
+            </div>
+            <span class="vchip"><svg class="i"><use href="#check"/></svg>Precio premium</span>
+          </div>
+          <h3>Branding Comercial</h3>
+          <p class="svc-promise">“Diseño que sostiene precios altos y acorta la venta.”</p>
+          <div class="svc-actions"><a href="#metodo" class="link">Ver más <svg class="i"><use href="#arrow-ur"/></svg></a><a href="#diagnostico" class="btn btn-teal btn-sm">Cotizar</a></div>
+        </article>
+
+        <!-- Activación: agenda de reuniones B2B -->
+        <article class="svc" data-tilt="5">
+          <div class="svc-top"><span class="ico"><svg class="i"><use href="#briefcase"/></svg></span><span class="svc-num">04</span></div>
+          <div class="svc-visual v-agenda" aria-hidden="true">
+            <div class="vis-head"><span>Agenda comercial</span></div>
+            <div class="week"><span>L</span><span class="on">M</span><span>M</span><span class="on">J</span><span class="on">V</span></div>
+            <div class="meet">
+              <span class="avatars"><i>GM</i><i>DF</i><i>+3</i></span>
+              <span class="meet-txt"><b>Comité de compra · Minera</b><small>Jue 10:00 · Sala ejecutiva</small></span>
+              <span class="meet-ok"><svg class="i"><use href="#check"/></svg></span>
+            </div>
+            <span class="vchip"><b>12</b>reuniones</span>
+          </div>
+          <h3>Activación Comercial &amp; B2B</h3>
+          <p class="svc-promise">“Presencia donde tus clientes clave deciden.”</p>
+          <div class="svc-actions"><a href="#metodo" class="link">Ver más <svg class="i"><use href="#arrow-ur"/></svg></a><a href="#diagnostico" class="btn btn-teal btn-sm">Cotizar</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ MÉTODO CRECE ============ -->
+    <section id="metodo" class="block" data-pose="metodo">
+      <header class="sec-head">
+        <p class="eyebrow"><i></i>Ingeniería comercial en 5 pasos</p>
+        <h2 class="split">Método CRECE: <span class="accent">5 semanas</span> para ordenar tus ventas</h2>
+      </header>
+
+      <div class="phases" id="phases" role="tablist" aria-label="Fases del método CRECE"></div>
+
+      <div class="phase-view">
+        <div class="phase-art" aria-hidden="true"></div>
+        <article class="phase-card" id="phaseCard">
+          <div class="phase-head"><span id="pLabel">FASE 1 DE 5 · SEMANA 1</span><span class="dur"><svg class="i"><use href="#clock"/></svg><em id="pDur">Semanas 1 y 2</em></span></div>
+          <h3 id="pTitle">Comprender: Auditar Fugas</h3>
+          <div class="phase-cols">
+            <div>
+              <small>¿Qué resolvemos aquí?</small>
+              <p class="pquote" id="pQuote">“Inmersión analítica sin suposiciones ni complacencias.”</p>
+              <p class="pfocus" id="pFocus">Enfoque: Diagnóstico profundo de ventas, finanzas comerciales y capacidad operativa.</p>
+            </div>
+            <div>
+              <small>2 entregables clave:</small>
+              <p class="pdel"><svg class="i"><use href="#check-circle"/></svg><span id="pD1">Matriz de fugas del embudo</span></p>
+              <p class="pdel"><svg class="i"><use href="#check-circle"/></svg><span id="pD2">Mapa de perfiles del comité de compra</span></p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ RESULTADOS ============ -->
+    <section id="resultados" class="block" data-pose="resultados">
+      <header class="sec-head">
+        <p class="eyebrow"><i></i>Resultados (+60%)</p>
+        <h2 class="split">Prueba Social Documentada en el Mercado B2B Peruano</h2>
+        <p class="sub">No mostramos “estimaciones teóricas”. Estos son los números auditados tras la implementación del Método CRECE.</p>
+      </header>
+
+      <div class="stats">
+        <div class="stat"><b data-count="60" data-prefix="+" data-suffix="%">+60%</b><span>Ventas trimestrales</span><small>Caso documentado Sanzconnect</small></div>
+        <div class="stat"><b data-count="56" data-prefix="+" data-suffix="%">+56%</b><span>Crecimiento en dotación</span><small>Expansión de equipo comercial</small></div>
+        <div class="stat"><b data-count="125" data-prefix="+" data-suffix="%">+125%</b><span>Alcance digital efectivo</span><small>Tráfico cualificado hacia ventas</small></div>
+        <div class="stat"><b data-count="100" data-suffix="%">100%</b><span>Foco en conversión</span><small>Cero métricas de vanidad</small></div>
+      </div>
+
+      <div class="case-box">
+        <div class="testi">
+          <svg class="i quote"><use href="#quote"/></svg>
+          <blockquote>“Con Contacto Creciente dejamos de pagar por publicaciones que nadie leía y empezamos a ver prospectos con intención real de contratar. El cambio en nuestro equipo de ventas y en la facturación trimestral fue inmediato.”</blockquote>
+          <div class="author">
+            <img class="avatar" src="img/equipo/roger.png" alt="Roger Job Sánchez" width="64" height="64">
+            <div><b>Roger Job Sánchez <em><svg class="i"><use href="#check"/></svg> Caso Auditado</em></b><span>Gerente General · <u>Sanzconnect</u></span><small>Servicios B2B / Conectividad Empresarial</small></div>
+          </div>
+        </div>
+        <aside class="impact">
+          <small>Impacto en 90 días</small>
+          <div><span>Crecimiento en dotación comercial</span><b>+56%</b></div>
+          <div><span>Aumento de alcance digital efectivo</span><b>+125%</b></div>
+          <div><span>Tiempo promedio de primer contacto</span><b>&lt; 12 min</b></div>
+          <a href="#diagnostico" class="btn btn-teal btn-block" data-magnetic>Ver cómo aplicar a mi empresa <svg class="i"><use href="#arrow-ur"/></svg></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ MARCAS ============ -->
+    <section id="marcas" class="brands" aria-label="Marcas con las que trabajamos">
+      <p class="eyebrow"><i></i>Marcas que confían en nosotros</p>
+      <div class="marquee">
+        <!-- Cada marca va una sola vez: main.js duplica la fila para que el carrusel sea infinito -->
+        <ul class="marquee-track">
+          <li class="brand-logo"><img src="img/marcas/entel.png" alt="Entel" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/a365.png" alt="A365" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/coyote-co.png" alt="Coyote Co" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/sanz-connect.png" alt="Sanz Connect" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/bad-boy-entertainment.png" alt="Bad Boy Entertainment" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/entre-ollas-y-salsa.png" alt="Entre Ollas y Salsa" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/globorox.png" alt="Globorox" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/viyuco-lashes.png" alt="Viyuco Lashes" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/byr-imprenta.png" alt="B&amp;R Imprenta y Personalizados" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/tuporta.png" alt="TuPorta" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/sweet-lab.png" alt="Sweet Lab Atlanta" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/imperio-travel.png" alt="Imperio Travel" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/iaccessory.png" alt="iaccessory" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/aura-y-beleza.png" alt="Aura &amp; Beleza" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/peruvian-fight-championship.png" alt="Peruvian Fight Championship" loading="lazy"></li>
+          <li class="brand-logo"><img src="img/marcas/festiva.png" alt="Festiva Centro de Convenciones" loading="lazy"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIACIÓN ============ -->
+    <section id="diferencia" class="block" data-pose="diferencia">
+      <header class="sec-head">
+        <p class="eyebrow"><i></i>Diferenciación real</p>
+        <h2 class="split">Agencia tradicional vs. Contacto Creciente</h2>
+      </header>
+
+      <div class="compare" role="table" aria-label="Agencia tradicional frente a Contacto Creciente">
+        <div class="cmp-row cmp-head" role="row">
+          <span class="cmp-k" role="columnheader"></span>
+          <span class="cmp-bad" role="columnheader"><svg class="i"><use href="#x-circle"/></svg>Agencia típica</span>
+          <span class="cmp-good" role="columnheader"><svg class="i"><use href="#check-circle"/></svg>Contacto Creciente</span>
+        </div>
+        <div class="cmp-row" role="row">
+          <span class="cmp-k" role="rowheader">Qué mide</span>
+          <span class="cmp-bad" role="cell"><svg class="i"><use href="#minus"/></svg>Likes e impresiones</span>
+          <span class="cmp-good" role="cell"><svg class="i"><use href="#check"/></svg>Clientes cerrados y caja</span>
+        </div>
+        <div class="cmp-row" role="row">
+          <span class="cmp-k" role="rowheader">Prospectos</span>
+          <span class="cmp-bad" role="cell"><svg class="i"><use href="#minus"/></svg>Curiosos sin presupuesto</span>
+          <span class="cmp-good" role="cell"><svg class="i"><use href="#check"/></svg>Leads filtrados con presupuesto</span>
+        </div>
+        <div class="cmp-row" role="row">
+          <span class="cmp-k" role="rowheader">Ventas</span>
+          <span class="cmp-bad" role="cell"><svg class="i"><use href="#minus"/></svg>“Si no cierras, es tu culpa”</span>
+          <span class="cmp-good" role="cell"><svg class="i"><use href="#check"/></svg>Guiones y tiempos alineados</span>
+        </div>
+        <div class="cmp-row" role="row">
+          <span class="cmp-k" role="rowheader">Reportes</span>
+          <span class="cmp-bad" role="cell"><svg class="i"><use href="#minus"/></svg>PDF tardío a fin de mes</span>
+          <span class="cmp-good" role="cell"><svg class="i"><use href="#check"/></svg>Comité semanal en vivo</span>
+        </div>
+        <div class="cmp-row" role="row">
+          <span class="cmp-k" role="rowheader">Solución</span>
+          <span class="cmp-bad" role="cell"><svg class="i"><use href="#minus"/></svg>Posts sueltos</span>
+          <span class="cmp-good" role="cell"><svg class="i"><use href="#check"/></svg>Sistema conectado a tu CRM</span>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p><b>¿Quieres dejar de pagar facturas sin ver retorno?</b> Evaluamos tu costo admisible por lead sin costo.</p>
+        <a href="#diagnostico" class="btn btn-teal" data-magnetic>Auditar mi embudo ahora <svg class="i"><use href="#arrow-ur"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ DIAGNÓSTICO (formulario de 3 pasos) ============ -->
+    <section id="diagnostico" class="block diag" data-pose="diagnostico">
+      <div class="diag-copy">
+        <p class="eyebrow"><i></i>Diagnóstico comercial gratuito</p>
+        <h2 class="split">Deja de adivinar con tu marketing. <span class="accent">Construye un sistema predecible.</span></h2>
+        <ul class="diag-bene">
+          <li><b>S/ 0</b><span>Sin costo ni compromiso</span></li>
+          <li><b>&lt;24h</b><span>Recibes tu análisis</span></li>
+          <li><b>30 min</b><span>Sesión ejecutiva 1 a 1</span></li>
+        </ul>
+      </div>
+
+      <form class="form" id="diagForm" novalidate>
+        <div class="steps"><span class="on">1. Rubro</span><span>2. Desafío</span><span>3. Datos</span></div>
+        <div class="track"><i id="track"></i></div>
+
+        <!-- Paso 1 -->
+        <fieldset class="step is-on" data-step="1">
+          <small class="kicker">Paso 1 de 3 · Cero fricción</small>
+          <h3>¿En qué rubro opera su empresa?</h3>
+          <p class="help">Selecciona tu modelo para adaptar las métricas de tu embudo.</p>
+          <div class="opts grid2" data-name="rubro">
+            <button type="button" class="opt is-on" data-val="Servicios B2B"><svg class="i"><use href="#building"/></svg>Servicios B2B<svg class="i tick"><use href="#check-circle"/></svg></button>
+            <button type="button" class="opt" data-val="Distribución / Comercio"><svg class="i"><use href="#package"/></svg>Distribución / Comercio<svg class="i tick"><use href="#check-circle"/></svg></button>
+            <button type="button" class="opt" data-val="Software / Tecnología"><svg class="i"><use href="#monitor"/></svg>Software / Tecnología<svg class="i tick"><use href="#check-circle"/></svg></button>
+            <button type="button" class="opt" data-val="Industria / Otro"><svg class="i"><use href="#settings"/></svg>Industria / Otro<svg class="i tick"><use href="#check-circle"/></svg></button>
+          </div>
+          <p class="qsmall">¿Cuántas personas gestionan ventas hoy?</p>
+          <div class="opts row3" data-name="equipo">
+            <button type="button" class="seg" data-val="1 vendedor">1 vendedor</button>
+            <button type="button" class="seg is-on" data-val="2-5 vendedores">2-5 vendedores</button>
+            <button type="button" class="seg" data-val="6+ vendedores">6+ vendedores</button>
+          </div>
+        </fieldset>
+
+        <!-- Paso 2 -->
+        <fieldset class="step" data-step="2">
+          <small class="kicker">Paso 2 de 3 · Cuello de botella</small>
+          <h3>¿Qué frena más a tu equipo comercial hoy?</h3>
+          <p class="help">Elige el que más se parezca a tu situación.</p>
+          <div class="opts grid2" data-name="desafio">
+            <button type="button" class="opt is-on" data-val="Pauta sin ventas"><svg class="i"><use href="#megaphone"/></svg>Pauta sin ventas<svg class="i tick"><use href="#check-circle"/></svg></button>
+            <button type="button" class="opt" data-val="Vendedores lentos"><svg class="i"><use href="#timer"/></svg>Vendedores lentos<svg class="i tick"><use href="#check-circle"/></svg></button>
+            <button type="button" class="opt" data-val="Curiosos sin dinero"><svg class="i"><use href="#ban"/></svg>Curiosos sin dinero<svg class="i tick"><use href="#check-circle"/></svg></button>
+            <button type="button" class="opt" data-val="Sin datos para proyectar"><svg class="i"><use href="#trend"/></svg>Sin datos para proyectar<svg class="i tick"><use href="#check-circle"/></svg></button>
+          </div>
+        </fieldset>
+
+        <!-- Paso 3 -->
+        <fieldset class="step" data-step="3">
+          <small class="kicker">Paso 3 de 3 · Tus datos</small>
+          <h3>¿A quién y adónde te escribimos?</h3>
+          <p class="help">Te respondemos por WhatsApp en menos de 24h hábiles.</p>
+          <label class="field">Tu nombre<input name="nombre" type="text" autocomplete="name" placeholder="Ej. Ana Torres"></label>
+          <label class="field">Empresa<input name="empresa" type="text" autocomplete="organization" placeholder="Nombre de tu empresa"></label>
+          <label class="field">WhatsApp<input name="whatsapp" type="tel" autocomplete="tel" placeholder="+51 9XX XXX XXX"></label>
+          <p class="err" id="formErr" role="alert"></p>
+        </fieldset>
+
+        <div class="form-nav">
+          <button type="button" class="btn btn-ghost-dark" id="btnBack" hidden>Atrás</button>
+          <button type="button" class="btn btn-dark btn-block" id="btnNext" data-magnetic><span>Siguiente: Cuello de botella</span> <svg class="i"><use href="#arrow-right"/></svg></button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="foot">
+    <div class="foot-brand">
+      <a class="brand brand-foot" href="#inicio"><span class="brand-mark light"><svg class="i"><use href="#sprout"/></svg></span><span class="brand-text">Contacto<br><b>Creciente</b></span></a>
+      <div class="social">
+        <small>Síguenos</small>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1FbJviagYc/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="i"><use href="#facebook"/></svg></a>
+          <a href="https://www.instagram.com/contactocreciente_agencia/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#instagram"/></svg></a>
+          <a href="https://wa.me/51922954610" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i"><use href="#chat"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-col">
+      <small>Unidades de servicio</small>
+      <a href="#servicios">Estrategia Comercial</a>
+      <a href="#servicios">Marketing Digital &amp; Performance</a>
+      <a href="#servicios">Branding con Objetivo Comercial</a>
+      <a href="#servicios">Activación Comercial &amp; B2B</a>
+      <a href="#metodo" class="mint">Ver Método CRECE <svg class="i"><use href="#arrow-ur"/></svg></a>
+    </div>
+    <div class="foot-col">
+      <small>Navegación</small>
+      <a href="#resultados">Casos de Éxito (+60%)</a>
+      <a href="#diferencia">Sobre Nosotros</a>
+      <a href="#diagnostico">Blog Estratégico B2B</a>
+      <a href="#diagnostico">Plan SEM &amp; Keywords</a>
+      <a href="#diagnostico">Diagnóstico MQL</a>
+    </div>
+    <div class="foot-col contact">
+      <small>Contacto directo</small>
+      <p><svg class="i"><use href="#pin"/></svg>Breña 124, Lima, Perú</p>
+      <p><svg class="i"><use href="#phone"/></svg>+51 922 954 610</p>
+      <!-- REVISAR: confirma que este sea el correo real de la empresa -->
+      <p><svg class="i"><use href="#mail"/></svg>contactocreciente@gmail.com</p>
+      <a href="#diagnostico" class="btn btn-teal btn-block" data-magnetic>Diagnóstico Comercial <svg class="i"><use href="#arrow-ur"/></svg></a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa" href="https://wa.me/51922954610?text=Hola%2C%20quiero%20un%20diagn%C3%B3stico%20comercial" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg class="i"><use href="#chat"/></svg></a>
+
+  <!-- Librerías (en este orden). Después, nuestro código -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
