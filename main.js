@@ -230,6 +230,18 @@
     addEventListener("pointermove", (e) => { document.body.classList.add("has-mouse"); gx(e.clientX); gy(e.clientY); });
   }
 
+  /* ---------- 3a) MENÚ MÓVIL ---------- */
+  const nav = $(".nav"), navToggle = $("#navToggle");
+  const setMenu = (open) => {
+    nav.classList.toggle("is-open", open);
+    navToggle.setAttribute("aria-expanded", open);
+    navToggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+    $("use", navToggle).setAttribute("href", open ? "#x" : "#menu");
+  };
+  navToggle.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
+  $$("#navLinks a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+  addEventListener("keydown", (e) => e.key === "Escape" && setMenu(false));
+
   /* ---------- 3b) CARRUSEL DE MARCAS ---------- */
   // Se duplica la fila para que el bucle no tenga cortes; la velocidad depende de cuántas marcas haya
   const marquee = $(".marquee-track");

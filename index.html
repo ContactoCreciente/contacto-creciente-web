@@ -22,6 +22,7 @@
       <symbol id="x-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol>
       <symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
       <symbol id="minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
       <symbol id="x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
       <symbol id="lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
       <symbol id="sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
@@ -61,15 +62,17 @@
       <span class="brand-mark"><svg class="i"><use href="#sprout"/></svg></span>
       <span class="brand-text">Contacto<br><b>Creciente</b></span>
     </a>
-    <nav class="nav-links" aria-label="Principal">
+    <nav class="nav-links" id="navLinks" aria-label="Principal">
       <a href="#inicio" class="is-active">Inicio</a>
       <a href="#servicios">Servicios</a>
       <a href="#metodo">Nosotros</a>
       <a href="#diagnostico">Plan SEM/SEO</a>
+      <a href="#diagnostico" class="btn btn-teal nav-cta">Diagnóstico Comercial <svg class="i"><use href="#arrow-ur"/></svg></a>
     </nav>
     <div class="nav-actions">
       <button type="button" class="nav-login" id="btnLogin" aria-haspopup="dialog"><svg class="i"><use href="#lock"/></svg>Ingresar</button>
       <a href="#diagnostico" class="btn btn-dark" data-magnetic>Diagnóstico Comercial <svg class="i"><use href="#arrow-ur"/></svg></a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Abrir menú"><svg class="i"><use href="#menu"/></svg></button>
     </div>
   </header>
 
